@@ -6,15 +6,12 @@
  * @returns The sum of the two numbers if add is true and false otherwise.
  */
 function sumValues(num1, num2, add) {
-    if (add) {
-        const result = 0;
-
+    if ((typeof num1 === 'number') && (typeof num2 === 'number') && (add === true)) {
+        let result = 0;
         result = num1 + num2;
-
         return result;
-    }
-    else {
-        return !add;
+    } else {
+        return add;
     }
 }
 
