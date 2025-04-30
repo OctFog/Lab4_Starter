@@ -37,7 +37,10 @@ function discountPrices(prices, discount) {
             discounted.push(discountedPrice);
         }
         return discounted;
+    } else {
+        return false;
     }
+    
 }
 
 module.exports = {sumValues, discountPrices};
