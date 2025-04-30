@@ -11,7 +11,7 @@ function sumValues(num1, num2, add) {
         result = num1 + num2;
         return result;
     } else {
-        return add;
+        return false;
     }
 }
 
@@ -26,7 +26,7 @@ function discountPrices(prices, discount) {
     if (length === 0) {
         return false;
     }
-    if (Array.isArray(prices) && (typeof discount === 'number') && (discount < 1) && (discount > 0)) {
+    if (Array.isArray(prices) && (typeof discount === 'number') && (discount <= 1) && (discount >= 0)) {
         let discounted = []
         let discountedPrice = 0
         for(let i = 0; i < length; i++) {
